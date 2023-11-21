@@ -72,13 +72,15 @@ aside .logo img {
   width: 100%;
 }
 
+.navigation_bar li.active{
+  background: #0ca678;
+  border-radius: 5px;
+}
+
 
 /* ------------------- dashbaord design---------------------*/
 .dashboard{
   display: none;
-}
-.active{
-  display: block;
 }
 
 .dashboard__heading{
@@ -164,6 +166,7 @@ aside .logo img {
 
 .orders{
   display: none;
+  width: 100%;
 }
 .orders.active{
   display: block;
@@ -189,4 +192,34 @@ aside .logo img {
 
 .orders__heading p{
   font-size: 12px;
+}
+
+.orders__table {
+  width: 70%;
+  margin-top: 1.4rem;
+  padding: 1rem;
+  border-radius: 10px;
+  background: whitesmoke;
+}
+.orders__table table{
+  width: 100%;
+  text-align: center;
+  border-collapse: collapse;
+}
+
+.orders__table table thead{
+  color: #36383C;
+}
+
+.orders__table table tr, td{
+
+}
+
+.orders__table tr{
+  height: 50px;
+  border-bottom: 1px  solid rgba(0, 0, 0, 0.5);
+}
+
+.orders__table table td {
+  font-size: 0.8rem;
 }

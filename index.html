@@ -21,7 +21,7 @@
     </div>
     <ul class="navigation_bar">
       <p>Main Menu</p>
-      <li><span class="material-symbols-outlined">
+      <li class="active"><span class="material-symbols-outlined">
         dashboard
         </span><a href="#">Dashboard</a></li>
       <li><span class="material-symbols-outlined">
@@ -52,7 +52,7 @@
 
     <!------------------ default dashboard here --------------->
     
-    <div class="dashboard context active">
+    <div class="dashboard context">
       <div class="dashboard__heading">
         <span class="material-symbols-outlined">
           home
@@ -102,7 +102,7 @@
 
     <!------------------ orders starts here --------------->
     
-    <div class="orders context">
+    <div class="orders context active">
         <div class="orders__heading">
           <span class="material-symbols-outlined">
             home
@@ -111,6 +111,38 @@
             <h1>Orders</h1>
             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequuntur inventore amet placeat?</p>
             </div>
+        </div>
+
+        <div class="orders__table">
+          <table>
+           <thead>
+            <tr>
+              <th>SL No</th>
+              <th>Products name</th>
+              <th>Products Code</th>
+              <th>Payment Type</th>
+              <th>Destination</th>
+              <th>Action</th>
+              <th>Prints</th>
+            </tr>
+           </thead>
+           <tbody>
+            <tr>
+              <td>1</td>
+              <td>Lorem, ipsum dolor.</td>
+              <td>3dkdo243</td>
+              <td>Cash on delivery</td>
+              <td>Chittagong.</td>
+              <td>
+                <button>Delete</button>
+                <button>Approve</button>
+              </td>
+              <td><span class="material-symbols-outlined">
+                print
+                </span></td>
+            </tr>
+           </tbody>
+          </table>
         </div>
   </div>
 

@@ -10,6 +10,11 @@ menu.forEach(function (e) {
   e.addEventListener("click", function () {
     let selectedItem = e.querySelector("a").textContent.toLowerCase();
 
+    menu.forEach(function (d) {
+      d.classList.remove("active");
+    })
+    e.classList.add("active");
+
     context.forEach(function (d) {
 
       context.forEach(function (params) {
