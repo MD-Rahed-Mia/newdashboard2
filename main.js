@@ -13,6 +13,7 @@ menu.forEach(function (e) {
     menu.forEach(function (d) {
       d.classList.remove("active");
     })
+
     e.classList.add("active");
 
     context.forEach(function (d) {

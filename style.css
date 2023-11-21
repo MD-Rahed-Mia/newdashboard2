@@ -229,8 +229,9 @@ aside .logo img {
 .orders__table table button{
   background: #087f5b;
   color: white;
-  padding: 0.4rem 1rem;
+  padding: 0.2rem 1rem;
   border-radius: 5px;
+  font-size: 0.8rem;
   border: none;
   cursor: pointer;
 }
@@ -366,4 +367,45 @@ aside .logo img {
   font-size: 0.8rem;
   color: #868e96;
   font-weight: bold;
+}
+.odc_total {
+  display: flex;
+  margin-left: 1.5rem;
+  align-items: center;
+}
+.odc_total span{
+  font-size: 1.5rem;
+  padding: 12px;
+  height: 40px;
+  width: 40px;
+  background: #5c7cfa;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+.odc_total p{
+  font-weight: bold;
+  color: #5c7cfa;
+}
+.odc__contact {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.odc__contact > div:first-child{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.odc__contact > div:last-child{
+  text-align: left;
+}
+
+.odc__contact__edit{
+  font-weight: bold;
+  color: #6741d9;
+  cursor: pointer;
 }
