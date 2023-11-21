@@ -70,6 +70,8 @@ aside .logo img {
 .main_container{
   padding: 2rem;
   width: 100%;
+  height: 100vh;
+  overflow-y: scroll;
 }
 
 .navigation_bar li.active{
@@ -195,11 +197,12 @@ aside .logo img {
 }
 
 .orders__table {
-  width: 70%;
+  width: 100%;
   margin-top: 1.4rem;
   padding: 1rem;
   border-radius: 10px;
-  background: whitesmoke;
+  background: white;
+  box-shadow: 2px 3px 10px rgba(0, 0, 0, 0.2);
 }
 .orders__table table{
   width: 100%;
@@ -210,11 +213,6 @@ aside .logo img {
 .orders__table table thead{
   color: #36383C;
 }
-
-.orders__table table tr, td{
-
-}
-
 .orders__table tr{
   height: 50px;
   border-bottom: 1px  solid rgba(0, 0, 0, 0.5);
@@ -222,4 +220,146 @@ aside .logo img {
 
 .orders__table table td {
   font-size: 0.8rem;
+}
+
+.orders__table table button{
+  background: #087f5b;
+  color: white;
+  padding: 0.4rem 1rem;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}
+.orders__table table button:last-child{
+  background: #e03131;
+}
+.orders__table table span{
+  font-size: 2rem;
+  color: #495057;
+  cursor: pointer;
+}
+.orders__table table td:nth-child(5){
+  font-size: 1.2rem;
+  color: #087f5b;
+}
+/* ------------------- order table starts here---------------------*/
+
+/* ------------------- order details starts from here---------------------*/
+.order_details{
+  width: 100%;
+  display: grid;
+  grid-template-columns: 65% 33%;
+  justify-content: space-between;
+  margin-top: 5rem;
+  color: #434c5e;
+  background: white;
+}
+.order_details__left{
+  padding: 1rem;
+  box-shadow: 2px 1px 15px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+}
+
+.order_details__heading{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 40px;
+}
+.order_details__heading p{
+  color: #6741d9;
+  cursor: pointer;
+  font-weight: bold;
+}
+.order_details_table{
+  width: 100%;
+  position: relative;
+  
+}
+.order_details_table table{
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+}
+.order_details_table tr {
+  height: 50px;
+  border-bottom: 1px solid gray;
+  text-align: center;
+}
+.order_details_table table th:nth-child(2){
+  text-align: left;
+  padding-left: 3rem;
+}
+.order_details_table table tr td:nth-child(2){
+  text-align: left;
+  padding-left: 3rem;
+  display: flex;
+  align-items: center;
+  column-gap: 1rem;
+}
+
+.order_details_table table td img{
+  height: 30px;
+  width: 30px;
+  margin-top: 8px;
+}
+
+.order_details_total{
+  text-align: right;
+  padding-right: 1rem;
+  width: 200px;
+  min-height: 150px;
+  float: right;
+  margin-top: 1.5rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.order_details_total p{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* ------------------- customer details include here---------------------*/
+
+.order_details__customer{
+  width: 100%;
+  padding: 1rem;
+  box-shadow: 2px 3px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+}
+.odc__img{
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+.order_details__customer img {
+  object-fit: cover;
+  width: 50px;
+  border-radius: 50%;
+  height: 50px;
+}
+.order_details__customer > div {
+  display: flex;
+  align-items: center;
+  column-gap: 1rem;
+  margin-top: 1rem;
+}
+.odc__title {
+  display: flex;
+  flex-direction: column;
+}
+
+.odc__title h3{
+  font-size: 1rem;
+}
+.odc__title p{
+  font-size: 0.8rem;
+  color: #868e96;
+  font-weight: bold;
 }
