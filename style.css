@@ -85,6 +85,10 @@ aside .logo img {
   display: none;
 }
 
+.dashboard.active{
+  display: block;
+}
+
 .dashboard__heading{
   display: flex;
   align-items: center;
