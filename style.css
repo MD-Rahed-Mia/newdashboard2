@@ -74,6 +74,13 @@ aside .logo img {
 
 
 /* ------------------- dashbaord design---------------------*/
+.dashboard{
+  display: none;
+}
+.active{
+  display: block;
+}
+
 .dashboard__heading{
   display: flex;
   align-items: center;
@@ -85,7 +92,7 @@ aside .logo img {
   border-radius: 5px;
   background: #3bc9db;
   margin-right: 1rem;
-  color: whitegi;
+  color: white;
 }
 
 .dashboard__heading h1 {
@@ -149,4 +156,37 @@ aside .logo img {
 .dasbp {
   font-size: 12px;
   margin-top: 1rem;
+}
+/* ------------------- default dashboard ends here---------------------*/
+
+/* ------------------- orders starts from here---------------------*/
+
+
+.orders{
+  display: none;
+}
+.orders.active{
+  display: block;
+}
+.orders__heading{
+  display: flex;
+  align-items: center;
+}
+
+.orders__heading span {
+  font-size: 1.5rem;
+  padding: 10px;
+  border-radius: 5px;
+  background: #3bc9db;
+  margin-right: 1rem;
+  color: white;
+}
+
+.orders__heading h1 {
+  font-size: 1.5rem;
+  color: #24232d;
+}
+
+.orders__heading p{
+  font-size: 12px;
 }
